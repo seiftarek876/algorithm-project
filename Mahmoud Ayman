@@ -3,11 +3,4 @@ def schedule_jobs(jobs)
     jobs.sort(key=lambda x: x[2], reverse=True)
 
     # Find the maximum deadline among all jobs
-    max_deadline = max(jobs, key=lambda x: x[1])[1]
-
-    # Initialize an array to keep track of the scheduled jobs
-    result = [-1] * max_deadline
-
-    # Initialize variables for counting the number of jobs done and the maximum profit
-    num_jobs_done = 0
-    max_profit = 0
+    max_deadline = max(jobs, key=lambda x: x[1])[
